@@ -1,2 +1,10 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: f3Lj2JTbUftXX7ny1a+acVYJDPTllOIfjQvlkN/Vm6CZMfMHntjVIRjvbGNKYSGxaLgPPJJoi8t+MEYm1s5JfaB2LWKZvix+uU4x36Ooh/huwjuGfLhVH7VFEJpEvTGsTXehRJMwYUZF2W8J1xrawPfJd9L+1kKZZ7XReLlk4mMz1VIEXo+N51AQd4TVCjLGsb2FVCH8S30B9LPpuT6Kg0L6XHEnWkMHrjEdPJOsNCKARxgKUWxnR31/CMNXLXK46gd237k+QV+e9MPxSKVT8C7ST2RVwp1MuqNqrAArvRYmgmpgUQ++ihkT6XiHn7DS2Zfeh9Emqh5Fa39F50JnyQbn2lqriDLtnuTL5ctXJW31e0Yxm457PA/4zp0JSbMqbXqXwyyu52WQXSlECu6fYz9uqZla8p/5hCc8Wy9yM+OkMx3kH1Jm9f6X0EQi0vUmq6ONwkaO45nL5Rat6cqTfta3BOFCBxWPU1x6TDBBmNR3VjyaLu80mq+vtv52gp3kWudsAujWUrklAYeU6uexdzJlpADlWQMXnfy3TP4ACHRgW6nE+KivtzPH5tTN4j4Sq/kEDyDX8jyLY4yj+5G3WAQ7qbE0VUQ1dJ+kCsuYMItc0AwBJef0HLAZ61/GIAr1lja+YoJd8PE9UUzV3/NXsQDI63eFB3lbOtH5zcCdG3Y=
+  app: floating-chamber-46220
+  on:
+    repo: calysabean/node-shopping-list-integration-tests
+
