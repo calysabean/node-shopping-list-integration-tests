@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha"
+    "test": "mocha --exit ./test"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
     "uuid": "^3.2.1"
@@ -18,7 +19,8 @@
   },
   "keywords": [
     "node",
-    "express"
+    "express",
+    "hyperdev"
   ],
   "license": "MIT",
   "bugs": {
