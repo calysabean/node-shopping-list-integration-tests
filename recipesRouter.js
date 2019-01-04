@@ -28,7 +28,7 @@ router.get("/", (req, res) => {
 // when new recipe added, ensure has required fields. if not,
 // log error and return 400 status code with hepful message.
 // if okay, add new item, and return it with a status 201.
-router.post("/", (req, res) => {
+router.post("/", jsonParser, (req, res) => {
   // ensure `name` and `budget` are in request body
   const requiredFields = ["name", "ingredients"];
   for (let i = 0; i < requiredFields.length; i++) {
@@ -55,7 +55,7 @@ router.delete("/:id", (req, res) => {
 // recipe id in updated item object match. if problems with any
 // of that, log error and send back status code 400. otherwise
 // call `Recipes.updateItem` with updated recipe.
-router.put("/:id", (req, res) => {
+router.put("/:id", jsonParser, (req, res) => {
   const requiredFields = ["name", "ingredients", "id"];
   for (let i = 0; i < requiredFields.length; i++) {
     const field = requiredFields[i];
